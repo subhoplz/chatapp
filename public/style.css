@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+        font-family: "Sixtyfour Convergence", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "BLED" 0,
+          "SCAN" 0,
+          "XELA" 0,
+          "YELA" 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #222;
+}
+h1{
+    margin: 50px 0;
+}
+.main{
+    border: 8px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    width: 90%;
+    max-width: 400px;
+}
+.name{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding:8px 16px;
+    color: #fff;
+    background-color: #222;
+}
+.name > span{
+    color: aliceblue;
+}
+.name-input{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: #222;
+    padding: 8px 16px;
+    margin: 0 12px;
+}
+.messages-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+.message-left,.message-right{
+    list-style: none;
+    padding: 8px 16px;
+    margin: 12px 0;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 20%;
+    word-wrap: break-word;
+}
+.message-left{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #a8a7a7;
+    box-shadow: -2px 2px 4px #fff;
+}
+.message-right{
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: #fff;
+    box-shadow: -2px 2px  4px #fff;
+}
+.message-left > p > span, 
+.message-right > p > span{
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+
+}
+.feedback{
+    font: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    text-align: center;
+}
+.message-form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.send-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.send-button i {
+    font-size: 20px;
+}
+
+#clients-total {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 95%;
+    }
+
+    .message-form {
+        padding: 10px 5px;
+    }
+
+    .message-input {
+        margin-right: 5px;
+    }
+}
+.client-total{
+    margin: 12px 0;
+}
